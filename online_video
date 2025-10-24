@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Video Lectures</title>
+  <style>
+    :root {
+      --primary-color: #FA4B37;
+      --secondary-color: #1E90FF; /* Blue color */
+      --text-color: #333;
+      --background-color: #f9f9f9;
+      --card-bg-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .course-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .course-card {
+      background-color: var(--card-bg-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    .course-card:hover {
+      transform: scale(1.05);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course-card h3 {
+      margin: 10px 0;
+      color: var(--primary-color);
+    }
+
+    .course-card p {
+      padding: 0 15px;
+    }
+
+    .course-card a {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      color: white;
+      background-color: var(--secondary-color);
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .course-card a:hover {
+      background-color: #1c7ed6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: var(--primary-color);
+      color: white;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .course-card {
+        width: 100%;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Video Lectures</h1>
+    <p>Explore a wide range of video lectures designed to help you succeed!</p>
+  </header>
+
+  <main class="container">
+    <section class="course-section">
+      <!-- Course Card 1 -->
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxE6SczddRMQRbaErBXhI1XsbEGcRPxTyNJA&s" alt="Programming Basics">
+        <h3>Programming Basics</h3>
+        <p>Learn the fundamentals of programming with step-by-step tutorials.</p>
+        <a href="https://youtu.be/zOjov-2OZ0E?si=m1KadcNVAWL_fEab">Watch Now</a>
+      </div>
+
+      <!-- Course Card 2 -->
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Sd6exR4B2s5iZ-g1tg6Uw0zDuWzdKZifxw&s" alt="Data Structures">
+        <h3>Data Structures</h3>
+        <p>Master data structures to enhance your coding efficiency.</p>
+        <a href="https://youtu.be/8hly31xKli0?si=rHGh42aPCDf6Ks-F">Watch Now</a>
+      </div>
+
+      <!-- Course Card 3 -->
+      <div class="course-card">
+        <img src="https://d15cw65ipctsrr.cloudfront.net/5e/41de00794811e682cb918e3e406e4d/cs161logo.png" alt="Algorithms">
+        <h3>Algorithms</h3>
+        <p>Understand algorithms with practical examples and explanations.</p>
+        <a href="https://youtu.be/8hly31xKli0?si=BwAhbpaR2A87I4L7">Watch Now</a>
+      </div>
+
+      <!-- Course Card 4 -->
+      <div class="course-card">
+        <img src="https://loveyouenglish.com/wp-content/uploads/2024/04/page-_1_-2.webp" alt="Advanced Topics">
+        <h3>Advanced Topics</h3>
+        <p>Delve deeper into advanced topics for competitive programming.</p>
+        <a href="https://youtube.com/playlist?list=PLxNPSjHT5qvvfORx__OYrXM6pUK8aR8j0&si=OqQfgq7YDrOGD3wp">Watch Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Online Video Lectures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
